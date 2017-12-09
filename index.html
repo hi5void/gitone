@@ -9,6 +9,103 @@
     <h1>guruve saranam</h1>
     <h2>gitone</h2>
     <h3>second update</h3>
+    <div>
+      <pre>
+        TIPS:
+
+GITHUB:
+
+Configration:
+
+git config –global user.name h4unas
+
+git config -global user.email h4unas@gmail.com
+
+modified – Changed files not commited
+
+Staging – Add any changed files to staging that u want to commit
+
+Commited- any files in the staging area are added to the commit when we make one.
+
+Create a repository:
+>Goto the folder and type the following command eg(c:\code\project1
+C:\code\project1 >git init
+C:\code\project1(master)
+>After we type the command it shaw the location as a Master.
+
+>Now go and create ur files inside this project1 folder, In our example we create a file called index.html
+
+> touch command is used to create a new file in unix,linex and cmd editor in windows too but not in command prompt.
+touch index.html
+
+
+>Now we need to commited, first we need to staging then only we can commit
+git status
+> It tells what files in what position
+Adding to stages:
+
+git add index.html
+
+which will add the file to stages
+
+delete from stages:
+git rm –cached index.html
+This commands will remove index from stage to modified
+
+Add many files:
+
+Cmd>git add.
+>This command will add all the files to staging
+
+Adding to Commit:
+
+Cmd>git commit -m “message used to describe abt the commit”
+
+>The above command adds all stage files to commited. -m for message which is very important when we have large project.
+
+View commit:
+Cmd> git log
+>which show large commit id author and date and description
+>we can also watch one line instead of many lines with command
+Cmd> git log –oneline
+Eg)
+715d392 (HEAD -> master) color was changed to blue
+06f31bb added css file with red
+c6da91c created initial index
+
+Checkout commit
+
+Revert commit
+
+Reset commit
+
+Checkout commit:
+
+Cmd>git checkout id
+>The above command will take u to the id position (all commit after the id location was not there) usually it it used to check the code. To back to our current location.
+
+NOTE: Checkout is always very safe way bcoz no commit was deleted we can easily bring back to final position checkout master command
+Cmd>git checkout master
+
+Revert Commit:
+>Revert basically undo a particular commit. But if the changes are in middle of the file then conflict error may display we can reverse only if error occours by using
+Cmd>git revert –abort (reverse only if stagle in error, if undo is done then we cant reverse it).
+Cmd>git revert id
+NOTE:Immediatele it take to the default editor, with test Revert with the message where we revert and new commit was added with that message, If it doesn’t change any message means just add a commit with proper message.
+Reset commit:
+
+>It reset all the commit from where we gave,
+Cmd>git reset id
+NOTE: It delete all the commit from that commit id only in command prompt not in the code… It finally gives u a chance. To delete it permenetly of change to previes stage we need to add hard option
+Cmd > git reset id –hard
+
+Branches:
+
+>Instead of adding to the master we can create a new branch and test our code if it works good then we can merge with them else disconnect the branch.
+>This also allow different people to work on same code.
+
+</pre>
+    </div>
 
   </body>
 </html>
