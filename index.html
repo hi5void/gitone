@@ -58,10 +58,6 @@ Cmd> git log
 >which show large commit id author and date and description
 >we can also watch one line instead of many lines with command
 Cmd> git log –oneline
-Eg)
-715d392 (HEAD -> master) color was changed to blue
-06f31bb added css file with red
-
 
 Cmd>git checkout id
 >The above command will take u to the id position (all commit after the id location was not there) usually it it used to check the code. To back to our current location.
@@ -85,6 +81,17 @@ Branches:
 
 >Instead of adding to the master we can create a new branch and test our code if it works good then we can merge with them else disconnect the branch.
 >This also allow different people to work on same code.
+Pull request:
+
+When something was newly added to out master in our web(githhub) then we need to take the changes from github to our git repository
+Cmd>git pull orgin master
+>which pulls the master updated from github to our git.
+
+>>when working with team we cant directly add our modified code to master so we need to send our modified code as a separate branch in web(github).
+>create a new branch in local system
+Cmd> git checkout -b style1
+The above cmd create a new branch style1
+>edit the code and commit with style
 
 </pre>
     </div>
