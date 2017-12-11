@@ -3,3 +3,17 @@ h1{
   font-style: italic;
   font-weight: bolder;
 }
+h1,h2,h3,h4{
+  font-family: sans-serif;
+  font-style: normal;
+  font-variant: normal;
+
+}
+h2{
+  color: blue;
+}
+pre{
+  margin: 10px;
+  padding-left: 20px;
+  }
+  
