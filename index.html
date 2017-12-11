@@ -53,18 +53,6 @@ which will add the file to stages
 delete from stages:
 git rm –cached index.html
 This commands will remove index from stage to modified
-
-Add many files:
-
-Cmd>git add.
->This command will add all the files to staging
-
-Adding to Commit:
-
-Cmd>git commit -m “message used to describe abt the commit”
-
->The above command adds all stage files to commited. -m for message which is very important when we have large project.
-
 View commit:
 Cmd> git log
 >which show large commit id author and date and description
@@ -73,15 +61,7 @@ Cmd> git log –oneline
 Eg)
 715d392 (HEAD -> master) color was changed to blue
 06f31bb added css file with red
-c6da91c created initial index
 
-Checkout commit
-
-Revert commit
-
-Reset commit
-
-Checkout commit:
 
 Cmd>git checkout id
 >The above command will take u to the id position (all commit after the id location was not there) usually it it used to check the code. To back to our current location.
